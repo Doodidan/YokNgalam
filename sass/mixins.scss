@@ -1,0 +1,20 @@
+@mixin clearfix {
+  &:after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin inline-block-middler ($height) {
+  &:before {
+    content: "";
+
+    display: inline-block;
+    width: 0;
+    height: $height;
+
+    vertical-align: middle;
+  }
+}
