@@ -1,4 +1,8 @@
 .promo {
+  &__color {
+    color: $text-color-modified;
+  }
+
   &__btn {
     text-transform: uppercase;
   }

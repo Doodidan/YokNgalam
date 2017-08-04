@@ -1,0 +1,11 @@
+.main-content {
+  &__row {
+    &--white {
+      background-color: $content-background-white;
+    }
+
+    &--light-blue {
+      background-color: $content-background-light-blue;
+    }
+  }
+}

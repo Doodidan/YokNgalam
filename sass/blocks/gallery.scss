@@ -1,0 +1,10 @@
+.gallery {
+  &__search {
+    width: $inner-content-width;
+    margin: 0 auto;
+  }
+
+  &__search-switch {
+    text-transform: uppercase;
+  }
+}
