@@ -1,0 +1,46 @@
+.schedule {
+  &__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $timing-titles-size;
+    margin: 0;
+
+    background-color: #29d9c2;
+    background-image: url("../img/mauntain schedule.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
+  &__days {
+    @include clearfix;
+
+    background-color: #ffffa6;
+  }
+
+  &__date {
+    float: right;
+  }
+
+  &__dest {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__dest-description {
+    display: flex;
+  }
+
+  &__dest-title {
+    margin: 0;
+  }
+
+  &__btn-add-sub-dest {
+    align-self: flex-end;
+  }
+
+  &__savelinks {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

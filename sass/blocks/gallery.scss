@@ -1,10 +1,23 @@
 .gallery {
   &__search {
+    display: flex;
     width: $inner-content-width;
     margin: 0 auto;
   }
 
+  &__search-type {
+    margin-left: auto;
+  }
+
   &__search-switch {
     text-transform: uppercase;
+  }
+
+  &__item {
+    display: flex;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
   }
 }

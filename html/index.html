@@ -11,23 +11,27 @@
 <!-- HEADER START -->
   <header class="main-header">
     <div class="container main-header__container">
-      <div class="logo">YokNgalam</div>
+      <div class="main-header__nav">
+        <div class="logo">YokNgalam</div>
 
-      <nav class="main-menu">
-        <a class="main-menu__item main-menu__item--active">Home</a>
-        <a href="#" class="main-menu__item">Destination</a>
-        <a href="#" class="main-menu__item">Ittinary</a>
-        <a href="#" class="main-menu__item">Review</a>
-        <a href="#" class="main-menu__item">Contact</a>
-      </nav>
+        <nav class="main-menu main-header__menu">
+          <a class="main-menu__item main-menu__item--active">Home</a>
+          <a href="#" class="main-menu__item">Destination</a>
+          <a href="#" class="main-menu__item">Ittinary</a>
+          <a href="#" class="main-menu__item">Review</a>
+          <a href="#" class="main-menu__item">Contact</a>
+        </nav>
 
-      <div class="user-block">Icon</div>
+        <div class="user-block">Icon</div>
+      </div>
 
-      <section class="promo">
-        <h1 class="page-title promo__title">Let's get <span class="promo__color">lost</span></h1>
-        <p>Malang will never dissapointed you.
-        <br>From every step you took you will be amazed and suddenly fallin love with Malang</p>
-        <button class="btn promo__btn">Set itinerary now</button>
+      <section class="promo main-header__promo">
+        <div class="promo__main">
+          <h1 class="page-title promo__title">Let's get <span class="promo__color">lost</span></h1>
+          <p>Malang will never dissapointed you.
+          <br>From every step you took you will be amazed and suddenly fallin love with Malang</p>
+          <button class="btn promo__btn">Set itinerary now</button>
+        </div>
       </section>
     </div>
   </header>
@@ -36,62 +40,93 @@
 <!-- CONTENT -->
   <main class="main-content">
     <div class="main-content__row main-content__row--white">
-      <section class="container promo">
-        <img class="promo__image" src="img/1x1.png" alt="City of Love picture" width="100" height="100">
-        <h2 class="promo__title">City of <span class="promo__color">Love</span></h2>
-        <p>Malang is the second largest city in East Java province, Indonesia. It has a history dating back to the ancient Mataram Kingdom. The city is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.</p>
+      <section class="container promo promo--reverse">
+        <div class="promo__main">
+          <h2 class="promo__title">City of <span class="promo__color">Love</span></h2>
+          <p>Malang is the second largest city in East Java province, Indonesia. It has a history dating back to the ancient Mataram Kingdom. The city is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.</p>
+        </div>
+        <div class="promo__additional">
+          <img class="promo__image" src="img/1x1.png" alt="City of Love picture" width="100" height="100">
+        </div>
       </section>
     </div>
 
     <div class="main-content__row main-content__row--light-blue">
       <div class="container">
         <section class="promo">
-          <h2 class="promo__title">Des<span class="promo__color">tination</span></h2>
-          <p>Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot, and Human Interest is worth to experienced.</p>
-          <div class="promo__info">see basic regulation</div>
+          <div class="promo__main">
+            <h2 class="promo__title">Des<span class="promo__color">tination</span></h2>
+            <p>Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot, and Human Interest is worth to experienced.</p>
+          </div>
+          <div class="promo__additional promo__info">see basic regulation</div>
         </section>
 
 <!-- GALLERY -->
         <section class="gallery">
+
+<!-- SEARCH FORM -->
           <div class="gallery__search">
-            <input  class="input input--text gallery__search-input" type="text">
+            <form class="gallery__search-form">
+              <button class="icon btn gallery__search-btn" type="submit">Find</button>
+              <input  class="input input--text gallery__search-input" type="text">
+            </form>
             <div class="gallery__search-type">
               <a class="gallery__search-type-switch gallery__search-type-switch--actvie">All place</a>/<a class="gallery__search-type-switch" href="#">Recomended place</a>
             </div>
           </div>
-          <article class="gallery__item">
-            <a class="gallery__image">
+<!-- SEARCH FORM END -->
+
+          <article class="gallery__item gallery__item--reverse">
+            <div class="gallery__main">
+              <div class="icon icon--batu"></div>
+              <h2 class="gallery_title">Batu</h2>
+              <p> is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city.</p>
+              <p>A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.</p>
+            </div>
+            <a class="gallery__additional">
               <img class="gallery__image" src="img/1x1.png" alt="Batu picture">
               <div class="btn gallery__btn-more">see more</div>
             </a>
-            <div class="icon icon--batu"></div>
-            <h2 class="gallery_title">Batu</h2>
-            <p> is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city.</p>
-            <p>A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.</p>
           </article>
           <article class="gallery__item">
-            <a class="gallery__image">
+            <div class="gallery__main">
+              <div class="icon icon--bromo"></div>
+              <h2 class="gallery_title">Bromo</h2>
+              <p><b>Mount Bromo</b> is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known</p>
+            </div>
+            <a class="gallery__additional">
               <img class="gallery__image" src="img/1x1.png" alt="Bromo picture">
               <div class="btn gallery__btn-more">see more</div>
             </a>
-            <a class="gallery__image">
+            <a class="gallery__additional">
               <img class="gallery__image" src="img/1x1.png" alt="Bromo picture">
               <div class="btn gallery__btn-more">see more</div>
             </a>
-            <div class="icon icon--bromo"></div>
-            <h2 class="gallery_title">Bromo</h2>
-            <p><b>Mount Bromo</b> is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known</p>
           </article>
 
 <!-- PAGINATOR -->
           <ul class="paginator">
-            <li class="paginator__item paginator__item--active"><a>1</a></li>
-            <li class="paginator__item"><a href="#"></a>2</li>
-            <li class="paginator__item"><a href="#"></a>3</li>
-            <li class="paginator__item"><a href="#"></a>4</li>
-            <li class="paginator__item"><a href="#"></a>5</li>
-            <li class="paginator__item"><a href="#"></a>></li>
-            <li class="paginator__item"><a href="#"></a>&#8811;</li>
+            <li class="paginator__item paginator__item--active">
+              <a class="paginator__link">1</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">2</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">3</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">4</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">5</a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">></a>
+            </li>
+            <li class="paginator__item">
+              <a class="paginator__link" href="#">&#8811;</a>
+            </li>
           </ul>
 <!-- PAGINATOR END -->
 
@@ -104,32 +139,37 @@
     <div class="main-content__row main-content__row--white">
       <div class="container">
         <section class="promo">
-          <img class="promo__image" src="img/1x1.png" alt="City of Love picture" width="100" height="100">
-          <h2 class="promo__title">Set <span class="promo__color">Ittinary</span></h2>
-          <p>Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.
-          <br>Have a great trip!</p>
+          <div class="promo__main">
+            <h2 class="promo__title">Set <span class="promo__color">Ittinary</span></h2>
+            <p>Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.
+            <br>Have a great trip!</p>
+          </div>
         </section>
 
 <!-- TIMING -->
         <section class="timing">
 
 <!-- SCHEDULE -->
-          <section class="schedule">
+          <section class="schedule timing__schedule">
             <h2 class="schedule__title">Your Ittinary Title Here</h2>
             <div class="schedule__days">
               <section class="schedule__day">
-                <div class="schedule__day-num">Day 1</div>
                 <div class="schedule__date">05/29/2015</div>
+                <div class="schedule__day-num">Day 1</div>
                 <div class="schedule__dest">
-                  <div class="icon icon--bromo icon--bromo-mini schedule__icon"></div>
-                  <h3 class="schedule__dest-title">Mt. Bromo</h3>
-                  <div class="schedule__time">03.30 - 09.00</div>
+                  <div class="schedule__dest-description">
+                    <div class="icon icon--bromo icon--bromo-mini schedule__icon"></div>
+                    <h3 class="schedule__dest-title">Mt. Bromo</h3>
+                    <div class="schedule__time">03.30 - 09.00</div>
+                  </div>
                   <button class="btn schedule__btn-add-sub-dest" type="button">add sub destination</button>
                 </div>
                 <div class="schedule__dest">
-                  <div class="icon icon--batu icon--batu-mini schedule__icon"></div>
-                  <h3 class="schedule__dest-title">Batu City</h3>
-                  <div class="schedule__time">10.00 - 15.00</div>
+                  <div class="schedule__dest-description">
+                    <div class="icon icon--batu icon--batu-mini schedule__icon"></div>
+                    <h3 class="schedule__dest-title">Batu City</h3>
+                    <div class="schedule__time">10.00 - 15.00</div>
+                  </div>
                   <p class="schedule__sub-dest">Enjoy Malang while Listening Music</p>
                   <p class="schedule__sub-dest">Gonna Eat BAKSO</p>
                   <button class="btn schedule__btn-add-sub-dest" type="button">add sub destination</button>
@@ -141,13 +181,15 @@
                 <div class="schedule__droppable"></div>
               </section>
             </div>
-            <a class="btn schedule__pdf" href="#">Save as PDF</a>
-            <a class="btn schedule__print" href="#">Print</a>
+            <div class="schedule__savelinks">
+              <a class="btn schedule__pdf" href="#">Save as PDF</a>
+              <a class="btn schedule__print" href="#">Print</a>
+            </div>
           </section>
 <!-- SCHEDULE END -->
 
 <!-- DESTINATIONS LIST -->
-          <section class="dest-list">
+          <section class="dest-list timing__dest-list">
             <h2 class="dest-list__title">List of Destination</h2>
             <form class="dest-list__sort">
               <span class="dest-list__text">sort by:</span>
@@ -158,44 +200,68 @@
             </form>
             <div class="dest-list__dests">
               <section class="dest-list__item">
-                <h3 class="dest-list__item-title">Mt. Bromo</h3>
-                <p class="dest-list__time">
-                  estimated time: <span class="dest-list__time-color">5 Hours</span>
-                </p>
-                <div class="icon dest-list__icon"></div>
-                <a href="#" class="dest-list__more">view details</a>
+                <div class="dest-list__main">
+                  <h3 class="dest-list__item-title">Mt. Bromo</h3>
+                  <p class="dest-list__time">
+                    estimated time: <span class="dest-list__time-color">5 Hours</span>
+                  </p>
+                </div>
+                <div class="dest-list__additional">
+                  <div class="icon dest-list__icon">icon</div>
+                  <a href="#" class="dest-list__more">view details</a>
+                </div>
               </section>
+
               <section class="dest-list__item">
-                <h3 class="dest-list__item-title">Mt. Bromo</h3>
-                <p class="dest-list__time">
-                  estimated time: <span class="dest-list__time-color">5 Hours</span>
-                </p>
-                <div class="icon dest-list__icon"></div>
-                <a href="#" class="dest-list__more">view details</a>
+                <div class="dest-list__main">
+                  <h3 class="dest-list__item-title">Mt. Bromo</h3>
+                  <p class="dest-list__time">
+                    estimated time: <span class="dest-list__time-color">5 Hours</span>
+                  </p>
+                </div>
+                <div class="dest-list__additional">
+                  <div class="icon dest-list__icon">icon</div>
+                  <a href="#" class="dest-list__more">view details</a>
+                </div>
               </section>
+
               <section class="dest-list__item">
-                <h3 class="dest-list__item-title">Mt. Bromo</h3>
-                <p class="dest-list__time">
-                  estimated time: <span class="dest-list__time-color">5 Hours</span>
-                </p>
-                <div class="icon dest-list__icon"></div>
-                <a href="#" class="dest-list__more">view details</a>
+                <div class="dest-list__main">
+                  <h3 class="dest-list__item-title">Mt. Bromo</h3>
+                  <p class="dest-list__time">
+                    estimated time: <span class="dest-list__time-color">5 Hours</span>
+                  </p>
+                </div>
+                <div class="dest-list__additional">
+                  <div class="icon dest-list__icon">icon</div>
+                  <a href="#" class="dest-list__more">view details</a>
+                </div>
               </section>
+
               <section class="dest-list__item">
-                <h3 class="dest-list__item-title">Mt. Bromo</h3>
-                <p class="dest-list__time">
-                  estimated time: <span class="dest-list__time-color">5 Hours</span>
-                </p>
-                <div class="icon dest-list__icon"></div>
-                <a href="#" class="dest-list__more">view details</a>
+                <div class="dest-list__main">
+                  <h3 class="dest-list__item-title">Mt. Bromo</h3>
+                  <p class="dest-list__time">
+                    estimated time: <span class="dest-list__time-color">5 Hours</span>
+                  </p>
+                </div>
+                <div class="dest-list__additional">
+                  <div class="icon dest-list__icon">icon</div>
+                  <a href="#" class="dest-list__more">view details</a>
+                </div>
               </section>
+
               <section class="dest-list__item">
-                <h3 class="dest-list__item-title">Mt. Bromo</h3>
-                <p class="dest-list__time">
-                  estimated time: <span class="dest-list__time-color">5 Hours</span>
-                </p>
-                <div class="icon dest-list__icon"></div>
-                <a href="#" class="dest-list__more">view details</a>
+                <div class="dest-list__main">
+                  <h3 class="dest-list__item-title">Mt. Bromo</h3>
+                  <p class="dest-list__time">
+                    estimated time: <span class="dest-list__time-color">5 Hours</span>
+                  </p>
+                </div>
+                <div class="dest-list__additional">
+                  <div class="icon dest-list__icon">icon</div>
+                  <a href="#" class="dest-list__more">view details</a>
+                </div>
               </section>
             </div>
           </section>

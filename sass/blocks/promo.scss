@@ -1,4 +1,10 @@
 .promo {
+  display: flex;
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+
   &__color {
     color: $text-color-modified;
   }

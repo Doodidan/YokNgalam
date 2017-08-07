@@ -1,15 +1,20 @@
 .main-header {
-  &__container {
-    position: relative;
+  background-color: #9ddfd8;
+  background-image: url("../img/mountain header.png");
+  background-repeat: no-repeat;
+  background-position: center;
 
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 738px;
+
+    // strip
     &::after {
       content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
 
       display: block;
-      width: 100%;
       height: 50px;
 
       font-style: 0;
@@ -17,5 +22,18 @@
       background-color: #ffffff;
       opacity: 0.5;
     }
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__menu {
+    margin-left: auto;
+  }
+
+  &__promo {
+    flex-basis: auto;
+    align-self: center;
   }
 }
