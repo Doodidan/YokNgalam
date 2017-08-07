@@ -1,12 +1,11 @@
 .dest-list {
   &__title {
-    $dest-list-title-border-size: 10px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     height: $timing-titles-size - $dest-list-title-border-size;
     margin: 0;
+
     border-bottom: $dest-list-title-border-size #000000 solid;
   }
 

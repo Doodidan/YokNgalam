@@ -13,9 +13,9 @@
   }
 
   &__days {
-    @include clearfix;
-
     background-color: #ffffa6;
+
+    @include clearfix;
   }
 
   &__date {

@@ -277,28 +277,30 @@
     <div class="main-content__row main-content__row--map">
       <section class="container contacts">
         <h2 class="contacts__title">Contact</h2>
-        <form class="contacts__form">
-          <input class="input input--text contacts__email" type="text" name="email">
-          <input class="input input--text contacts__company" type="text" name="company">
-          <input class="input input--text contacts__subject" type="text" name="subject">
-          <textarea class="input input--textarea contacts__message" name="message"></textarea>
-          <button type="submit" class="bth contacts__btn">Send message</button>
-        </form>
-        <span class="contacts__separator">or</span>
-        <div class="contacts__findus">
-          <h3 class="contacts__findus-title">You Can Find Us Here</h3>
-          <div class="contacts__item">
-            <div class="icon"></div>
-            <p class="contacts__address">Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang</p>
-            <a href="#" class="contacts__maplink">Find on maps</a>
-          </div>
-          <div class="contacts__item">
-            <div class="icon"></div>
-            <a href="#" class="contacts__tel">(+62) 8816723812</a>
-          </div>
-          <div class="contacts__item">
-            <div class="icon"></div>
-            <a href="#" class="contacts__tel">(+62) 8512371632</a>
+        <div class="contacts__content">
+          <form class="contacts__form">
+            <input class="input input--text contacts__input contacts__email" type="text" name="email">
+            <input class="input input--text contacts__input contacts__company" type="text" name="company">
+            <input class="input input--text contacts__input contacts__subject" type="text" name="subject">
+            <textarea class="input input--textarea contacts__input contacts__message" name="message"></textarea>
+            <button type="submit" class="bth contacts__btn">Send message</button>
+          </form>
+          <span class="contacts__separator">or</span>
+          <div class="contacts__findus">
+            <h3 class="contacts__findus-title">You Can Find Us Here</h3>
+            <div class="contacts__item">
+              <div class="icon"></div>
+              <p class="contacts__address">Jl.Danau Bratan sekian nomer sekian, Sawojajar Malang</p>
+              <a href="#" class="contacts__maplink">Find on maps</a>
+            </div>
+            <div class="contacts__item">
+              <div class="icon"></div>
+              <a href="#" class="contacts__tel">(+62) 8816723812</a>
+            </div>
+            <div class="contacts__item">
+              <div class="icon"></div>
+              <a href="#" class="contacts__tel">(+62) 8512371632</a>
+            </div>
           </div>
         </div>
       </section>
@@ -308,8 +310,10 @@
 <!-- SUBSCRIBE -->
     <div class="main-content__row main-content__row--green">
       <div class="container subscribe">
-        <h2 class="subscribe__title">Keep in Touch</h2>
-        <p class="subscribe__description">We Will Give you latest information about Malang</p>
+        <div class="subscribe__main">
+          <h2 class="subscribe__title">Keep in Touch</h2>
+          <p class="subscribe__description">We Will Give you latest information about Malang</p>
+        </div>
         <input type="text" class="input input--text subscribe__email">
         <button class="btn subscribe__btn" type="submit">></button>
       </div>
@@ -321,7 +325,7 @@
 
 <!-- FOOTER -->
   <footer class="main-footer">
-    <div class="container">
+    <div class="container main-footer__container">
 
 <!-- TECH MENU -->
       <ul class="tech-menu">
@@ -340,12 +344,15 @@
 <!-- SOCIAL LINKS END -->
 
 <!-- COPYRIGHT -->
-      <p class="copyright">copyright@YokMalang. Allright Reserved. 2015</p>
+      <p class="main-footer__copyright">copyright@YokMalang. Allright Reserved. 2015</p>
 <!-- COPYRIGHT END -->
 
     </div>
   </footer>
 <!-- FOOTER END -->
 
+<!-- TONE -->
+  <div class="tone"></div>
+<!-- TONE END -->
 </body>
 </html>

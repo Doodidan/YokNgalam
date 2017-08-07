@@ -1,0 +1,31 @@
+.contacts {
+  &__title {
+    text-align: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    // flex-direction: column;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    flex-basis: 100%;
+    margin: 0;
+  }
+
+  &__company,
+  &__subject {
+    flex-basis: 50%;
+  }
+
+  &__btn {
+    margin-left: auto;
+  }
+}
