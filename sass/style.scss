@@ -1,15 +1,19 @@
+// normalize
 @import "normalize";
 
+// global sass-files
 @import "variables";
 @import "mixins";
 @import "global";
 @import "classlib";
 
+// global blocks
 @import "blocks/container";
 @import "blocks/input";
 @import "blocks/icon";
 @import "blocks/btn";
 
+// blocks
 @import "blocks/contacts";
 @import "blocks/copyright";
 @import "blocks/dest-list";
@@ -27,5 +31,4 @@
 @import "blocks/subscribe";
 @import "blocks/tech-menu";
 @import "blocks/timing";
-@import "blocks/tone";
 @import "blocks/user-block";
